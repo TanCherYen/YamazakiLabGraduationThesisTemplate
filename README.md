@@ -1,7 +1,7 @@
 # 卒論のテンプレートについて
 
 ## 書く際に変更が必要なもの
-- graduation_thesis.sty  
+- graduation_thesis.tex  
 卒論用のメインファイルになります。各章やサブファイルをこちらで読み込んでください。
 
 - style/toppage.sty  
