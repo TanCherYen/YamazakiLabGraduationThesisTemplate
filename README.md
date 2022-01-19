@@ -12,7 +12,7 @@ Pythonがインストールされていることを前提とします。
 
 ### Windowsの場合
 [公式ドキュメント](https://docs.docker.jp/docker-for-windows/install.html)を参考にDockerをインストールしてください。
-[Make](https://redhologerbera.hatenablog.com/entry/2021/05/16/163305)https://redhologerbera.hatenablog.com/entry/2021/05/16/163305)をインストールし、パスを通してください。
+[Make](https://redhologerbera.hatenablog.com/entry/2021/05/16/163305)をインストールし、パスを通してください。
 
 ### Mac の場合
 [公式ドキュメント](https://docs.docker.jp/docker-for-mac/install.html)を参考にDockerをインストールしてください。
