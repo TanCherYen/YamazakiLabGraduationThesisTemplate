@@ -1,7 +1,7 @@
 # 卒論のテンプレートについて
 
 ## 書く際に変更が必要なもの
-- graduation_thesis.sty  
+- graduation_thesis.tex  
 卒論用のメインファイルになります。各章やサブファイルをこちらで読み込んでください。
 
 - style/toppage.sty  
@@ -12,7 +12,7 @@ Pythonがインストールされていることを前提とします。
 
 ### Windowsの場合
 [公式ドキュメント](https://docs.docker.jp/docker-for-windows/install.html)を参考にDockerをインストールしてください。
-[Make](https://redhologerbera.hatenablog.com/entry/2021/05/16/163305)https://redhologerbera.hatenablog.com/entry/2021/05/16/163305)をインストールし、パスを通してください。
+[Make](https://redhologerbera.hatenablog.com/entry/2021/05/16/163305)をインストールし、パスを通してください。
 
 ### Mac の場合
 [公式ドキュメント](https://docs.docker.jp/docker-for-mac/install.html)を参考にDockerをインストールしてください。
@@ -26,9 +26,7 @@ Docker Desktopは起動した状態で使用してください。
 以下のコマンドでパスを取得します。
 
 > $ pwd
->
-> Path
-> ----
+
 > C:\Users\Kensuke.N\Desktop\GraduationThesisTemplate
 
 こちらのパスもとに、Makefile内でcompile-wのブロックでの`${pwd}`を書き換えます。
