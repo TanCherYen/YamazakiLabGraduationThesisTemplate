@@ -26,9 +26,7 @@ Docker Desktopは起動した状態で使用してください。
 以下のコマンドでパスを取得します。
 
 > $ pwd
->
-> Path
-> ----
+
 > C:\Users\Kensuke.N\Desktop\GraduationThesisTemplate
 
 こちらのパスもとに、Makefile内でcompile-wのブロックでの`${pwd}`を書き換えます。
