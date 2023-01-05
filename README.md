@@ -1,33 +1,40 @@
-# 修論
-## 構造
-### はじめに
+# 卒論のテンプレートについて
 
-- 背景
-    - 少子高齢化
-    - 農業従事者の担い手不足
-    - 洋ナシの等級判定作業の負担
-- 目的
+## 書く際に変更が必要なもの
+- graduation_thesis.tex  
+卒論用のメインファイルになります。各章やサブファイルをこちらで読み込んでください。
 
-### 関連研究
+- style/toppage.sty  
+論文タイトルと年度について変更してください．
 
-- 画像処理の研究
-- 深層学習の研究
+## 環境構築
+Pythonがインストールされていることを前提とします。
 
-### 提案手法
+### Windowsの場合
+[公式ドキュメント](https://docs.docker.jp/docker-for-windows/install.html)を参考にDockerをインストールしてください。
+[Make](https://redhologerbera.hatenablog.com/entry/2021/05/16/163305)をインストールし、パスを通してください。
 
-- 洋ナシの抽出
-    - 方法
-    - 検証
-- 外観汚損の検出
-    - 方法
-    - 検証
-- 外観汚損検出後の等級判定
-    - 手法
-    - 重複除去の手法
+### Mac の場合
+[公式ドキュメント](https://docs.docker.jp/docker-for-mac/install.html)を参考にDockerをインストールしてください。
 
-### 実装
+## 使い方
+Docker Desktopは起動した状態で使用してください。
+`utils/format.py`で設定されているREPLACE_TEXTSのリストで設定されている値を書き換えることで、フォーマット対象の文字列を修正することができます。必要に応じて変更してください。
 
-- 撮像システム
-- 推論サーバー
+### Windowsの場合
+ターミナルで卒論を保存しているディレクトリまで移動してください。
+以下のコマンドでパスを取得します。
 
-### まとめ
+> $ pwd
+
+> C:\Users\Kensuke.N\Desktop\GraduationThesisTemplate
+
+こちらのパスもとに、Makefile内でcompile-wのブロックでの`${pwd}`を書き換えます。
+上記の例では、`C:\Users\Kensuke.N\Desktop\GraduationThesisTemplate`に書き換えることになります。
+ここまでで準備が終了したので、以下のコマンドでtexファイルをコンパイルしてください。
+> make compile-w
+
+### Macの場合
+以下のコマンドでコンパイルをすることが出来ます．
+
+> make
