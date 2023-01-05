@@ -8,7 +8,13 @@
 論文タイトルと年度について変更してください．
 
 ## 環境構築
-Pythonがインストールされていることを前提とします。
+下記のソフトウェアを利用します。
+無い場合はインストールしてください
+- [x] ターミナルソフト
+- [x] エディタ
+- [x] Python
+- [x] Make
+- [x] Docker
 
 ### Windowsの場合
 [公式ドキュメント](https://docs.docker.jp/docker-for-windows/install.html)を参考にDockerをインストールしてください。
