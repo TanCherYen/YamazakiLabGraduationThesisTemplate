@@ -3,20 +3,20 @@ PROJECT_PATH = ${PWD}
 compile:
 	@make clear
 	@python3 ./utils/format.py
-	@docker run --rm -it -v $(PROJECT_PATH):/workdir paperist/alpine-texlive-ja platex ./graduation_thesis.tex
-	@docker run --rm -it -v ${PROJECT_PATH}/:/workdir paperist/alpine-texlive-ja pbibtex ./graduation_thesis
-	@docker run --rm -it -v $(PROJECT_PATH):/workdir paperist/alpine-texlive-ja platex ./graduation_thesis.tex
-	@docker run --rm -it -v $(PROJECT_PATH):/workdir paperist/alpine-texlive-ja platex ./graduation_thesis.tex
-	@docker run --rm -it -v $(PROJECT_PATH):/workdir paperist/alpine-texlive-ja dvipdfmx ./graduation_thesis.dvi
+	@docker run --rm -it -v $(PROJECT_PATH):/workdir paperist/texlive-ja platex ./graduation_thesis.tex
+	@docker run --rm -it -v ${PROJECT_PATH}/:/workdir paperist/texlive-ja pbibtex ./graduation_thesis
+	@docker run --rm -it -v $(PROJECT_PATH):/workdir paperist/texlive-ja platex ./graduation_thesis.tex
+	@docker run --rm -it -v $(PROJECT_PATH):/workdir paperist/texlive-ja platex ./graduation_thesis.tex
+	@docker run --rm -it -v $(PROJECT_PATH):/workdir paperist/texlive-ja dvipdfmx ./graduation_thesis.dvi
 	@make clear
 
 compile-w:
 	python  .\utils\format.py
-	docker run --rm -it -v ${pwd}:/workdir paperist/alpine-texlive-ja platex ./graduation_thesis.tex
-	docker run --rm -it -v ${pwd}:/workdir paperist/alpine-texlive-ja pbibtex ./graduation_thesis
-	docker run --rm -it -v ${pwd}:/workdir paperist/alpine-texlive-ja platex ./graduation_thesis.tex
-	docker run --rm -it -v ${pwd}:/workdir paperist/alpine-texlive-ja platex ./graduation_thesis.tex
-	docker run --rm -it -v ${pwd}:/workdir paperist/alpine-texlive-ja dvipdfmx ./graduation_thesis.dvi
+	docker run --rm -it -v ${pwd}:/workdir paperist/texlive-ja platex ./graduation_thesis.tex
+	docker run --rm -it -v ${pwd}:/workdir paperist/texlive-ja pbibtex ./graduation_thesis
+	docker run --rm -it -v ${pwd}:/workdir paperist/texlive-ja platex ./graduation_thesis.tex
+	docker run --rm -it -v ${pwd}:/workdir paperist/texlive-ja platex ./graduation_thesis.tex
+	docker run --rm -it -v ${pwd}:/workdir paperist/texlive-ja dvipdfmx ./graduation_thesis.dvi
 	del *.dvi
 	del *.log
 	del *.aux
